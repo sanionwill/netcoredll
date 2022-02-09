@@ -12,6 +12,11 @@ public class Md5Helper
     {
         byte[] bytes = Encoding.UTF8.GetBytes(str);
 
+        #region Net5.0及以下
+        // MD5CryptoServiceProvider crypto = new MD5CryptoServiceProvider();
+        // bytes = crypto.ComputeHash(bytes);
+        #endregion
+
         #region Net6.0
         bytes = MD5.Create().ComputeHash(bytes);
         #endregion
