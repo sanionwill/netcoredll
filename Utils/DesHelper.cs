@@ -13,6 +13,19 @@ public class DesHelper
             byte[] rgbIV = IV_Keys;
             byte[] inputByteArray = Encoding.UTF8.GetBytes(sourceStr);
 
+            #region  Net5.0及以下
+            // DESCryptoServiceProvider dCSP = new DESCryptoServiceProvider();//.net6.0会报SYSLIB0021警告
+            // using (MemoryStream mStream = new MemoryStream())
+            // {
+            //     using (CryptoStream cStream = new CryptoStream(mStream, dCSP.CreateEncryptor(rgbKey, rgbIV), CryptoStreamMode.Write))////.net6.0会报SYSLIB0021警告
+            //     {
+            //         cStream.Write(inputByteArray, 0, inputByteArray.Length);
+            //         cStream.FlushFinalBlock();
+            //         return Convert.ToBase64String(mStream.ToArray());
+            //     }
+            // }
+            #endregion
+
             #region  Net6.0
             using (MemoryStream mStream = new MemoryStream())
             {
