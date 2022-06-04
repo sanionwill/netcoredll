@@ -9,3 +9,12 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"md5 encrypt result is {md5Result}");
 }
 #endregion
+
+#region Des Demo
+{
+    DesHelper desHelper = new DesHelper();
+    var yourStr = "Hello World";
+    var desResult = desHelper.DESEncrypt(yourStr, "01234567");
+    Console.WriteLine($"des encrypt result is {desResult}");
+}
+#endregion
