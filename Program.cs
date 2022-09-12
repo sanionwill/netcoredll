@@ -18,3 +18,12 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"des encrypt result is {desResult}");
 }
 #endregion
+
+#region 3Des Demo
+{
+    DES3Helper des3Helper = new DES3Helper();
+    var yourStr = "Hello World";
+    var des3Result = des3Helper.DES3Encrypt(yourStr);
+    Console.WriteLine($"3des encrypt result is {des3Result}");
+}
+#endregion
