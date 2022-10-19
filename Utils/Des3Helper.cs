@@ -44,4 +44,32 @@ public class DES3Helper
         Console.WriteLine("CAL=" + result);
         return result;
     }
+
+    public string DES3Decrypt(string result, string key = "UKMXGTWRACINFGCFOJTNYZNV")
+    {
+        string plainText = "";
+        //解密
+        try
+        {
+            #region Net6.0
+            var des = TripleDES.Create();
+            des.Key = Encoding.UTF8.GetBytes(key);
+            des.Mode = CipherMode.CBC;
+            des.Padding = PaddingMode.PKCS7;
+            #endregion
+
+            des.IV = Encoding.UTF8.GetBytes(iv);
+
+            var desDecrypt = des.CreateDecryptor();
+            byte[] buffer = Convert.FromBase64String(result);
+            plainText = Encoding.UTF8.GetString(desDecrypt.TransformFinalBlock(buffer, 0, buffer.Length));
+        }
+        catch (Exception)
+        {
+            plainText = string.Empty;
+        }
+
+        Console.WriteLine("PLA=" + plainText);
+        return plainText;
+    }
 }
