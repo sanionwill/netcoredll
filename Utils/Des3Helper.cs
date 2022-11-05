@@ -51,6 +51,14 @@ public class DES3Helper
         //解密
         try
         {
+            #region Net5.0及以下
+            // var des = new TripleDESCryptoServiceProvider
+            // {
+            //     Key = Encoding.UTF8.GetBytes(key),
+            //     Mode = CipherMode.CBC
+            // };
+            #endregion
+
             #region Net6.0
             var des = TripleDES.Create();
             des.Key = Encoding.UTF8.GetBytes(key);
