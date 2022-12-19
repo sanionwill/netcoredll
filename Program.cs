@@ -25,5 +25,7 @@ Console.WriteLine("Hello, World!");
     var yourStr = "Hello World";
     var des3Result = des3Helper.DES3Encrypt(yourStr);
     Console.WriteLine($"3des encrypt result is {des3Result}");
+    var des3Plain = des3Helper.DES3Decrypt(des3Result);
+    Console.WriteLine($"3des decrypt result is {des3Plain}");
 }
 #endregion
