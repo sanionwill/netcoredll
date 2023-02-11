@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using System.Net;
 
+class IPVModel
+{
+    public static string IPv4 = "InterNetwork";
+    public static string IPv6 = "InterNetworkV6";
+}
+
 class IPHelper
 {
     public List<string> GetLocalIp(string ipv)
