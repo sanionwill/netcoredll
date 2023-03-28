@@ -29,3 +29,11 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"3des decrypt result is {des3Plain}");
 }
 #endregion
+
+#region IP Demo
+{
+    IPHelper iPHelper = new IPHelper();
+    var listIPV4 = iPHelper.GetLocalIp(IPVModel.IPv4);
+    Console.WriteLine($"IPV4 result is {listIPV4}");
+}
+#endregion
