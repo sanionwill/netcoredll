@@ -37,3 +37,11 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"IPV4 result is {listIPV4}");
 }
 #endregion
+
+#region getRange int Demo
+{
+    var list = new List<int> { 0, 1, 2 };
+    var result = new ArrayHelper().getRange(list, 0, 2);
+    Console.WriteLine($"getRange result is {result}");
+}
+#endregion
