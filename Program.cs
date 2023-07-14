@@ -45,3 +45,11 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"getRange result is {result}");
 }
 #endregion
+
+#region getRange string Demo
+{
+    var list = new List<string> { "0", "1", "2" };
+    var result = new ArrayHelper().getRange(list, 0, 2);
+    Console.WriteLine($"getRange result is {result}");
+}
+#endregion
