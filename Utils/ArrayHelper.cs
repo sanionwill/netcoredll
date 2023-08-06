@@ -7,8 +7,13 @@ public class ArrayHelper
     {
         return source.GetRange(start, length);
     }
-    
+
     public List<string> getRange(List<string> source, int start, int length)
+    {
+        return source.GetRange(start, length);
+    }
+    
+    public List<float> getRange(List<float> source, int start, int length)
     {
         return source.GetRange(start, length);
     }
