@@ -53,3 +53,11 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"getRange result is {result}");
 }
 #endregion
+
+#region getRange float Demo
+{
+    var list = new List<float> { 0f, 1f, 2f };
+    var result = new ArrayHelper().getRange(list, 0, 2);
+    Console.WriteLine($"getRange result is {result}");
+}
+#endregion
