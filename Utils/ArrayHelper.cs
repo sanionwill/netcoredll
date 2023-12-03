@@ -22,4 +22,9 @@ public class ArrayHelper
     {
         return source.GetRange(start, length);
     }
+
+    public List<long> getRange(List<long> source, int start, int length)
+    {
+        return source.GetRange(start, length);
+    }
 }
