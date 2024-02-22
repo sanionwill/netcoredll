@@ -27,4 +27,9 @@ public class ArrayHelper
     {
         return source.GetRange(start, length);
     }
+
+    public List<object> getRange(List<object> source, int start, int length)
+    {
+        return source.GetRange(start, length);
+    }
 }
