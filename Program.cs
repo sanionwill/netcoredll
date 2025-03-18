@@ -85,3 +85,11 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"getRange result is {result}");
 }
 #endregion
+
+#region GetCurrentDateTime Demo
+{
+    DateTimeHelper dateTimeHelper = new DateTimeHelper();
+    var datetimeString = dateTimeHelper.GetCurrentDateTime();
+    Console.WriteLine($"getRange result is {datetimeString}");
+}
+#endregion
