@@ -138,7 +138,15 @@ All demos list
 {
     DateTimeHelper dateTimeHelper = new DateTimeHelper();
     var datetimeString = dateTimeHelper.GetCurrentDateTime();
-    Console.WriteLine($"getRange result is {datetimeString}");
+    Console.WriteLine($"GetCurrentDateTime result is {datetimeString}");
+}
+#endregion
+
+#region GetCurrentDate Demo
+{
+    DateTimeHelper dateTimeHelper = new DateTimeHelper();
+    var dateString = dateTimeHelper.GetCurrentDate();
+    Console.WriteLine($"GetCurrentDate result is {dateString}");
 }
 #endregion
 ```
