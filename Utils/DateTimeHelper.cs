@@ -9,4 +9,9 @@ public class DateTimeHelper
     {
         return System.DateTime.Now.ToString("yyyy-MM-dd");
     }
+
+    public string GetCurrentTime()
+    {
+        return System.DateTime.Now.ToString("HH:mm:ss");
+    }
 }
