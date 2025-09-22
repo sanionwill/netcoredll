@@ -101,3 +101,11 @@ Console.WriteLine("Hello, World!");
     Console.WriteLine($"GetCurrentDate result is {dateString}");
 }
 #endregion
+
+#region GetCurrentTime Demo
+{
+    DateTimeHelper dateTimeHelper = new DateTimeHelper();
+    var timeString = dateTimeHelper.GetCurrentTime();
+    Console.WriteLine($"GetCurrentTime result is {timeString}");
+}
+#endregion
