@@ -1,6 +1,7 @@
 public class DateTimeHelper
 {
     private string dateTimeFormat = "yyyy-MM-dd HH:mm:ss";
+    private string dateFormat = "yyyy-MM-dd";
 
     public string GetCurrentDateTime()
     {
@@ -9,7 +10,7 @@ public class DateTimeHelper
 
     public string GetCurrentDate()
     {
-        return System.DateTime.Now.ToString("yyyy-MM-dd");
+        return System.DateTime.Now.ToString(dateFormat);
     }
 
     public string GetCurrentTime()
