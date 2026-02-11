@@ -25,7 +25,8 @@ Directory and files
     ├── Des3Helper.cs
     ├── DesHelper.cs
     ├── IPHelper.cs
-    └── Md5Helper.cs
+    ├── Md5Helper.cs
+    └── DateTimeHelper.cs
 ```
 
 Copy `/Utils/` directory or a special file（such as `/Utils/Des3Helper.cs`） and add to your own project
